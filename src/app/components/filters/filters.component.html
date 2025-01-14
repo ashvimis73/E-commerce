@@ -1,0 +1,25 @@
+<div class="filter-container">
+  <h6>FILTERS</h6>
+
+  <div class="filter">
+    <div class="heading">
+      <span class="filter-heading">BRAND</span>
+      <span class="clearBtn">Clear All</span>
+    </div>
+    <div class="filter-list">
+      <div *ngFor="let brand of brands" class="filter-list-content">
+        <input type="checkbox" [name]="brand" [id]="brand"> <span> {{ brand }} </span>
+      </div>
+    </div>
+  </div>
+  <div class="filter">
+    <div class="heading">
+      <span class="filter-heading">TYPE</span>
+    </div>
+    <div class="filter-list">
+      <div *ngFor="let type of types" class="filter-list-content">
+        <input type="radio" name="type" [id]="type"> <span> {{ type }} </span>
+      </div>
+    </div>
+  </div>
+</div>

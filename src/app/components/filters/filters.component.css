@@ -1,0 +1,33 @@
+.filter-container {
+  padding: 10px;
+
+  .filter {
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      font-size: small;
+
+      .filter-heading {
+        opacity: 0.7;
+      }
+
+      .clearBtn {
+        color: #6A84D0;
+      }
+    }
+
+    .filter-list {
+      border: 1px gray solid;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 10px 0;
+
+      .filter-list-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<mat-dialog-content>
+  <div class="product-detail-container" *ngIf="product">
+    <div class="close" mat-dialog-close>X</div>
+    <div class="product-details">
+      <div class="product-image">
+        <img [src]="product.image" [alt]="product.name">
+      </div>
+      <div class="major-detail">
+        <div>
+          <div class="product-name"> {{ product.name }} </div>
+          <div class="product-category"> {{ product.category }} </div>
+        </div>
+        <span class="product-price"> {{ product.price | currency }} </span>
+        <div class="product-color">
+        <div class="color-div"></div>
+        <div> {{ product.color | uppercase }} </div>
+        </div>
+      </div>
+    </div>
+    <div class="description-reviews">
+      <span>Description</span>
+      <span>Reviews</span>
+    </div>
+
+    <div class="detailed-content">
+      <div> {{ product.description }} </div>
+      <div> UID : {{ product.uid }} </div>
+      <div> Code : {{ product.code }} </div>
+      <div> Type : {{ product.type }} </div>
+    </div>
+
+    <button class="add-to-cart-btn" (click)="addToCart()"> ADD TO CART </button>
+  </div>
+
+</mat-dialog-content>

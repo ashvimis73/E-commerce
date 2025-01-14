@@ -1,0 +1,20 @@
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="../../../assets/logo-e-commerce.png" alt="E-Commerce">
+    </div>
+    <div class="navigations">
+      <ul>
+        <li> Home </li>
+        <li> Products </li>
+        <li> About Us </li>
+        <li> Contact Us </li>
+        <li class="cart"> Cart <span class="cart-count" *ngIf="getCartProductCount()"> {{ getCartProductCount() }} </span></li>
+        <li> 
+          <button>LOGIN</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
